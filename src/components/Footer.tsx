@@ -1,7 +1,12 @@
 import { Anchor, Container, Group } from '@mantine/core';
 import classes from '../assets/css/Footer.module.css';
 import Logo from "./Logo.tsx";
-import {links} from "./Header.tsx";
+
+const links = [
+    { link: 'https://github.com/theodore-garcher', label: 'Github'},
+    { link: 'https://www.linkedin.com/in/theodore-garcher/', label: 'LinkedIn'},
+    { link: '#', label: 'theodore@garcher.dev'},
+];
 
 export default function Footer() {
     const items = links.map((link) => (

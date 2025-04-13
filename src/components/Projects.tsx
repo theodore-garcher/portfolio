@@ -1,7 +1,7 @@
 import { Container, Text } from '@mantine/core';
-import classes from '../assets/css/Hero.module.css';
+import classes from '../assets/css/Projects.module.css';
 
-export default function Hero() {
+export default function Projects() {
     return (
         <div className={classes.wrapper}>
             <Container size={700} className={classes.inner}>

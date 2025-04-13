@@ -2,14 +2,15 @@ import {Burger, Container, Drawer, Group} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from '../assets/css/Header.module.css';
 import Logo from "./Logo";
-import github from '../assets/img/github.svg';
-import linkedin from '../assets/img/linkedin.svg';
+import github from '../assets/img/svg/github.svg';
+import linkedin from '../assets/img/svg/linkedin.svg';
+import mail from '../assets/img/svg/mail.svg';
 
-export const links = [
-    { link: '#', label: 'About' },
+const links = [
     { link: '#', label: 'Projects' },
     { link: 'https://github.com/theodore-garcher', label: 'Github', icon: github },
-    { link: 'https://www.linkedin.com/in/theodore-garcher/', label: 'LinkedIn', icon: linkedin }
+    { link: 'https://www.linkedin.com/in/theodore-garcher/', label: 'LinkedIn', icon: linkedin },
+    { link: '#', label: 'theodore@garcher.dev', icon: mail },
 ];
 
 export default function Header() {
@@ -23,7 +24,7 @@ export default function Header() {
                 className={classes.link}
             >
                 {
-                    link.icon && (
+                    false && (
                         <img
                             src={link.icon}
                             alt={`${link.label} link`}

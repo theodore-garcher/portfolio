@@ -1,23 +1,5 @@
-- TS
-- JS
-- HTML
-- CSS
-- Python
-- C
-- C++
-- Postgres
-- Cisco
-- Grafana
-- Jira
-- Ruby
-- RoR
-- Node.js
-- Express
-- PHP
-- Laravel
-- SQL
-- java
-- git
-- docker
-- linux
-- kibana
+Any kind of problem really — backend, frontend, infrastructures, networking, security, automation. I just like to build and tinker.
+
+Some of the **technologies & tools** I’ve used to make things
+
+A few **projects** I’ve worked on
