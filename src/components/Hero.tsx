@@ -7,7 +7,7 @@ export default function Hero() {
             <Container size={700} className={classes.inner}>
                 <h1 className={classes.title}>
                     Hey 👋 I'm{' '}
-                    <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+                    <Text component="span" variant="gradient" gradient={{ from: 'yellow', to: 'yellow' }} inherit>
                         Theodore
                     </Text>
                     {','} <br/>
@@ -15,7 +15,7 @@ export default function Hero() {
                 </h1>
 
                 <Text className={classes.description} color="dimmed">
-                    Any kind of problem really — backend, frontend, infrastructures, networking, security, automation. I just like to build and tinker.
+                    Any kind of problem really — backend, frontend, networking, infrastructures, automation. I just like to build and tinker.
                 </Text>
             </Container>
         </div>

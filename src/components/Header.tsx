@@ -2,15 +2,12 @@ import {Burger, Container, Drawer, Group} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from '../assets/css/Header.module.css';
 import Logo from "./Logo";
-import github from '../assets/img/svg/github.svg';
-import linkedin from '../assets/img/svg/linkedin.svg';
-import mail from '../assets/img/svg/mail.svg';
 
 const links = [
-    { link: '#', label: 'Projects' },
-    { link: 'https://github.com/theodore-garcher', label: 'Github', icon: github },
-    { link: 'https://www.linkedin.com/in/theodore-garcher/', label: 'LinkedIn', icon: linkedin },
-    { link: '#', label: 'theodore@garcher.dev', icon: mail },
+    { link: '#', label: 'Projects', external: false },
+    { link: 'https://github.com/theodore-garcher', label: 'Github', external: true },
+    { link: 'https://www.linkedin.com/in/theodore-garcher/', label: 'LinkedIn', external: true },
+    { link: 'mailto:theodore@garcher.dev', label: 'theodore@garcher.dev', external: false },
 ];
 
 export default function Header() {
@@ -22,17 +19,9 @@ export default function Header() {
                 key={link.label}
                 href={link.link}
                 className={classes.link}
+                {...link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {}}
             >
-                {
-                    false && (
-                        <img
-                            src={link.icon}
-                            alt={`${link.label} link`}
-                            className={classes.linkIcon}
-                        />
-                    )
-                }
-                    {link.label}
+                {link.label}
             </a>
         );
     });

@@ -7,7 +7,7 @@ export default function Skills() {
             <Container size={700}>
                 <div className={classes.inner}>
                         <h2 className={classes.title}>
-                            Some of the <span className={classes.highlight}>technologies & tools</span> I’ve used to make things:
+                            Some of the <span className={classes.highlight}>technologies & tools</span> I’ve used to make things
                         </h2>
                 </div>
             </Container>
