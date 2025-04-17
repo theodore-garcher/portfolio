@@ -7,7 +7,7 @@ const links = [
     { link: '#', label: 'Projects', external: false },
     { link: 'https://github.com/theodore-garcher', label: 'Github', external: true },
     { link: 'https://www.linkedin.com/in/theodore-garcher/', label: 'LinkedIn', external: true },
-    { link: 'mailto:theodore@garcher.dev', label: 'theodore@garcher.dev', external: false },
+    { link: 'mailto:theodore@garcher.fr', label: 'theodore@garcher.fr', external: false },
 ];
 
 export default function Header() {
