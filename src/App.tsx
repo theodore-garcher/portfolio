@@ -18,7 +18,7 @@ export default function App() {
                 <Technologies />
             </div>
             <Skills />
-            <Projects />
+            {/*<Projects />*/}
             <Footer/>
         </MantineProvider>
     );
